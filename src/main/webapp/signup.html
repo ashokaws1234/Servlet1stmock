@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SignUp</title>
+<style>
+    /* CSS Colors */
+    body {
+        background-color: #f2f2f2;
+    }
+    
+    div {
+        background-color: #ffffff;
+        padding: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    input[type="text"],
+    input[type="number"],
+    button {
+        padding: 5px;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        outline: none;
+    }
+    
+    button {
+        background-color: #4CAF50;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #45a049;
+    }
+    
+    /* CSS Animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    div {
+        animation: fadeIn 1s;
+    }
+</style>
+
+</head>
+<body>
+
+<div style="border: 2">
+<form action="signup" method="post">
+
+Name=<input type="text" name="name" ><br>
+employeeId=<input type="text" name="eid" ><br>
+mobile=<input type="number" name="phone" ><br>
+<button >Save</button><button type="reset">Cancel</button>
+
+</form>
+</div>
+<br><br>
+<div>
+<form action="search" method="post">
+Search element by name:<br>
+<input type="text" name="name" ><br>
+<button> Search</button>
+</form>
+</div>
+<br><br>
+<div>
+<form action="id" method="post">
+Search element by id:<br>
+<input type="number" name="id" ><br>
+<button> Search</button>
+</form>
+</div>
+
+<br><br>
+
+<div>
+<form action="f" method="post">
+<button>FetchAll</button>
+</form>
+</div>
+
+
+</body>
+</html>
